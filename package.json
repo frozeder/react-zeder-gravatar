@@ -1,0 +1,34 @@
+{
+  "name": "react-zeder-gravatar",
+  "version": "0.1.0",
+  "description": "React component for rendering gravatar images with render fallback to initials svg avatar",
+  "main": "build/react-zeder-gravatar.js",
+  "scripts": {
+    "build": "webpack",
+    "server": "webpack-dev-server",
+    "test": "jest --verbose"
+  },
+  "author": "Yaroslav K <hortuk@yahoo.com",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "react-addons-test-utils": "^15.3.2",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "blueimp-md5": "^2.4.0",
+    "fetch-jsonp": "^1.0.2",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "jest": {
+    "testPathDirs": [
+      "<rootDir>/src"
+    ]
+  }
+}
