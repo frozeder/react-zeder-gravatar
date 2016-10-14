@@ -1,6 +1,6 @@
 import React from 'react';
 import TestUtils from 'react-addons-test-utils';
-import Gravatar from './../index';
+import Gravatar from '../../example/index';
 
 test("Gravatar component succesfully renders", () => {
     const component = TestUtils.renderIntoDocument(
