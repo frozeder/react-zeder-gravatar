@@ -2,7 +2,7 @@
   "name": "react-zeder-gravatar",
   "version": "0.1.0",
   "description": "React component for rendering gravatar images with render fallback to initials svg avatar",
-  "main": "build/react-zeder-gravatar.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "webpack",
     "server": "webpack-dev-server",

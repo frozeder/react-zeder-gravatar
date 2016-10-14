@@ -1,19 +1,19 @@
-var path = require("path");
-
 module.exports = {
-  entry: './src/index.jsx',
+  entry: {
+    lib : './src/gravatar.jsx',
+    example : './example/example.jsx',
+  },
   output: {
-    path: './build',
-    filename: 'react-zeder-gravatar.js'
+    filename: './[name]/index.js',
+    library : 'react-zeder-gravatar',
+    libraryTarget: 'umd'
   },
   module : {
     loaders : [
       {
         test: /\.jsx?$/,
-        include: [
-          path.resolve(__dirname, "src"),
-        ],
-        loader : 'babel-loader'
+        exclude : '/node_modules',
+        loader : 'babel',
       }
     ]
   },
@@ -21,7 +21,7 @@ module.exports = {
     host: 'localhost',
     port: 8099,
     hot: true,
-    contentBase: "./www/",
+    contentBase: "./example",
   },
   devtool : 'eval'
 };
